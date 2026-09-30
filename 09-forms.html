@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms | HTML</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fcfcfc;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Formulary</h1>
+    </header>
+    <main>
+        <section>
+            <h2>What are Forms?</h2>
+            <p>Formularies are one of the most important elements in <abbr title="HyperText Markup Language">HTML</abbr>. They are used to collect user input elements like:
+            <ul>
+                <li>Data entry</li>
+                <li>Interactuion</li>
+                <li>Accessibility</li>
+                <li>Validation and information submission</li>
+            </ul>
+            </p>
+        </section>
+        <section>
+            <h2>How to work with forms in HTML</h2>
+            <p>To work with forms in HTML, you need to use the <code>&lt;form&gt;</code> element.</p>
+            This element represents a interactive formulary that allows users to submit data to a server. The <code>&lt;form&gt;</code> element can contain various input elements, such as text fields, checkboxes, radio buttons, and submit buttons.
+            <h3>Base Structure</h3>
+            <form>
+                <!-- basic example -->
+                <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required><br>
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" ><br>
+                <label for="password">Password</label>
+                    <input type="password" name="password" id="password" ><br>
+                <label for="dob">DOB</label>
+                    <input type="date" name="dob" id="dob" ><br>
+                <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" >
+                <label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" required>I agree to the terms and conditions
+                    <!-- you can use ctrl+space after the word to see the available shortcuts, for exemple: write "req" and press ctrl plus space to see the shortcut for the "required" tool -->
+                </label><br>
+                <button>Send formulary</button>
+                <!-- button can be used as an expandable box like the ones used Q&A/FAQs -->
+            </form>
+        </section>
+        <section>
+            <h2>Grouping Form Elements</h2>
+            <p>Form elements can be grouped using the <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> elements.</p>
+            <form action="">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name-pi">Name</label><br>
+                        <input type="text" name="name-pi" id="name-pi" placeholder="Maya Torres"><br>
+
+                    <label for="email-pi">Email</label><br>
+                        <input type="email" name="email-pi" id="email-pi" placeholder="mayatorres@email.com"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Address</legend>
+                    <label for="cep">CEP</label><br>
+                        <input type="text" name="cep" id="cep" placeholder="12345-678"><br>
+                    
+                    <label for="street">Address</label><br>
+                        <input type="text" name="street" id="street" placeholder="123 Main St"><br>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

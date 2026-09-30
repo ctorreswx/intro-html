@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre navegação vertical">
+    <title>Vertical Navigation | HTML</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #1c1c1c;
+            color: #fcfcfc;
+            font-family: sans-serif;
+        }
+        header, footer {
+            background-color: deeppink;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body id="top">
+    <header>
+        <h1><a href="">logo</a></h1>
+        <nav>
+            <ul>
+                <!-- ids are usually identified with a hashtag -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat distinctio perferendis cupiditate neque odit tempore accusamus minima id ullam provident temporibus beatae sit, velit adipisci? Voluptate ipsum tempora quibusdam!</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat distinctio perferendis cupiditate neque odit tempore accusamus minima id ullam provident temporibus beatae sit, velit adipisci? Voluptate ipsum tempora quibusdam!</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat distinctio perferendis cupiditate neque odit tempore accusamus minima id ullam provident temporibus beatae sit, velit adipisci? Voluptate ipsum tempora quibusdam!</p>
+        </section>
+        <section id="top">
+            <h2>Navigate to the top</h2>
+            <p>Press the button bellow to return to the top of the page.</p>
+            <a href="#top">Back to top</a>
+        </section>
+        <footer>
+            <p>&copy; 2026 - all rights reserved</p>
+        </footer>
+    </main>
+</body>
+</html>

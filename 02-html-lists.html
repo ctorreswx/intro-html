@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+</head>
+<body>
+    <h1>About HTML lists 🤔</h1>
+    <p>HTML lists are used to group related items together in a structured format. There are three main types of lists in HTML: ordered lists, unordered lists, and definition lists. As one of the most important and simple things in <strong>HTML</strong>, they appear frequently in web pages.</p>
+
+    <hr>
+    <h2>Types of HTML Lists</h2>
+
+    <h3>Unordered Lists (UL)</h3>
+    <p>An unordered list is a collection of items that do <strong> not have a specific order or sequence</strong>. Each item in the list is typically represented by a bullet point. Unordered lists are created using the <code>&lt;ul&gt;</code> element, and each item within the list is represented by the <code>&lt;li&gt;</code> element.</p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <!-- li - list item -->
+    </ul>
+
+    <hr>
+    <h3>Ordered Lists (OL)</h3>
+    <p>An ordered list is a collection of items that <strong>have a specific order or sequence</strong>. Each item in the list is typically represented by a number or letter. Ordered lists are created using the <code>&lt;ol&gt;</code> element, and each item within the list is represented by the <code>&lt;li&gt;</code> element.</p>
+
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <!-- li - list item -->
+    </ol>
+
+    <p>Note: The type of numbering for an ordered list can be customized using the <code>type</code> attribute on the <code>&lt;ol&gt;</code> element. For example:</p>
+
+    <ol type="A">
+        <!-- type="A" for uppercase letters, type="a" for lowercase letters, type="I" for uppercase Roman numerals, type="i" for lowercase Roman numerals -->
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <p>And if you want it to start at a different number, you can use the <code>start</code> attribute:</p>
+
+    <ol type="a" start="4">
+        <!-- when changing the first item for a letter, use the corresponding number. like: 4 for 'd' -->
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <hr>
+    <h3>Definition Lists (DL)</h3>
+    <p>A definition list is a collection of <strong>terms and their corresponding definitions</strong>. Definition lists are created using the <code>&lt;dl&gt;</code> element, and each term-definition pair is represented by the <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> elements.</p>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Language used for structuring web pages</dd>
+        <dt>CSS</dt>
+        <dd>Language used for styling web pages</dd>
+        <dt>JavaScript</dt>
+        <dd>Language used for adding interactivity and behavior to web pages</dd>
+        <!-- dt - definition term, dd - definition description -->
+    </dl>
+
+    <hr>
+    <h3>Nested Lists</h3>
+    <p>HTML lists can also be nested, meaning that <strong>one list can be placed inside another list</strong>. This allows for the creation of more complex and hierarchical structures. Nested lists can be created by placing a new <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> or <code>&lt;dl&gt;</code> element inside an existing <code>&lt;li&gt;</code> element.</p>
+    <!-- its possible to change the bullet style of each list item, as shown in the following examples -->
+        <!-- type="disc", type="circle", or type="square" -->
+    <ul type="disc">
+        <!-- 'disc' for filled circular bullet points -->
+         <!-- 'circle' for circular bullet points -->
+          <!-- 'square' for square bullet points -->
+           <!-- '1' for numeric bullet points -->
+
+        <li>Programming Roles
+            <ul>
+                <li>Frontend</li>
+                <li>Backend</li>
+                <li>Fullstack</li>
+            </ul>
+        </li>
+<p> 
+        <li>What to learn
+            <ol>
+                <li>Colors basics</li>
+                <li>Typography basics</li>
+                <li>Layout basics</li>
+            </ol>
+        </li></p>
+<p>
+        <li>Design
+            <dl>
+                <dt>UI</dt>
+                <dd>User Interface</dd>
+                <dt>UX</dt>
+                <dd>User Experience</dd>
+            </dl>
+        </li></p>
+
+    </ul>
+
+</body>
+</html>
